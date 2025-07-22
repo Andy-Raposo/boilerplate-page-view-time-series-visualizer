@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import numpy as np
+# Since the test is old and np.float was deprecated, here's a fix to pass the tests:
 if not hasattr(np, 'float'):
     np.float = float
 from pandas.plotting import register_matplotlib_converters
